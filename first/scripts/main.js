@@ -12,7 +12,9 @@
     myHeading.innerHTML = 'Mozilla is cool, ' + myName;
   }
 }
-
+myButton.onclick = function() {
+  setUserName();
+}
 
       
       let myImage = document.querySelector('img');
