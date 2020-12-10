@@ -8,7 +8,9 @@
         localStorage.setItem('name', myName);
         myHeading.textContent = 'Mozilla はすばらしいよ、' + myName;
       }
-
+myButton.onclick = function() {
+  setUserName();
+}
 
       
       let myImage = document.querySelector('img');
