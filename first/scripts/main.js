@@ -4,13 +4,15 @@
       let myHeading = document.querySelector('h1');
       
       function setUserName() {
-        let myName = prompt('あなたの名前を入力してください。');
-        localStorage.setItem('name', myName);
-        myHeading.textContent = 'Mozilla はすばらしいよ、' + myName;
-      }
-myButton.onclick = function() {
-  setUserName();
+  let myName = prompt('Please enter your name.');
+  if(!myName || myName === null) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+  }
 }
+
 
       
       let myImage = document.querySelector('img');
